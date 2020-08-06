@@ -1,0 +1,49 @@
+<view class="list_r">
+  <view class="r_back">
+    <image src="../../images/back1.jpg" class="back_img"></image>
+    <view class="r_sort">
+      <view class="week_movie">
+        <view class="week_list">{{text}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="looked_list">
+  <view wx:for="{{lists}}" wx:key="index">
+    <view class="NO">
+      <text>No.{{index+1}}</text>
+    </view>
+    <navigator url="../detail/detail?id={{item.id}}" open-type="redirect">
+      <view class="pro_no">
+        <view class="no_ll">
+          <view class="ll_img">
+            <image src="{{item.images.small}}"></image>
+          </view>
+          <view class="ll_pp">
+            <view class="pp_title">{{item.title}}</view>
+            <view class="star_score">
+              <image src="../../images/star.svg"></image>
+              <image src="../../images/star.svg"></image>
+              <image src="../../images/star.svg"></image>
+              <image src="../../images/star.svg"></image>
+              <image src="../../images/star2.svg"></image>
+              <text>{{item.rating.average}}</text>
+            </view>
+            <view class="kinds">
+              <text wx:for="{{item.genres}}" wx:key="index">{{item}}/</text>
+              <text>{{item.pubdates[0]}}/</text>
+              <text>{{item.durations}}</text>
+
+            </view>
+          </view>
+        </view>
+        <view class="no_rr">
+          好看
+        </view>
+      </view>
+    </navigator>
+    <view class="no_content">
+      <text> 的核武器我的核武器的核武器的我的是成功因素很多服务器德国和我去过的我ID号武器读音为轻度额外ID号为地和我的韩文清华人凤凰网的hiU盾哈哈手机卡HD声卡好唔好电视接口和技术的还是实践活动</text>
+    </view>
+  </view>
+</view>

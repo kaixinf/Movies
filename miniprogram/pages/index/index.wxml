@@ -1,0 +1,175 @@
+<!-- 头部 -->
+<view class="header">
+	<view class="logo">
+		<image src="../../images/logo.png"></image>
+	</view>
+	<view class="search">
+		<image src="../../images/search.png"></image>
+		<input placeholder="搜索"></input>
+	</view>
+	<view class="PC">
+		<image src="../../images/PC.png"></image>
+	</view>
+</view>
+<!-- 豆瓣热门 -->
+<view>
+	<view>
+		<view class="nav">
+			<view class="nav_l">影院热映</view>
+			<navigator url="../lookMore/lookMore">
+				<view class="nav_img">
+					<text>查看更多</text>
+					<image src="../../images/arrow_right.png"></image>
+				</view>
+			</navigator>
+		</view>
+		<!-- 轮播 -->
+		<view class="swiper_box">
+			<view class="swiper">
+				<navigator url="../hot_detail/hot_detail?id={{item.id}}" class="model_swiper" wx:for="{{movie_lists}}" wx:key="index">
+					<image src="{{item.images.small}}"></image>
+					<view>
+						<view class="title">{{item.title}}</view>
+						<view class="star_img">
+							<image src="../../images/star.svg"></image>
+							<image src="../../images/star.svg"></image>
+							<image src="../../images/star.svg"></image>
+							<image src="../../images/star1.svg"></image>
+							<image src="../../images/star2.svg"></image>
+							<text style="margin-left:20rpx;font-size:35rpx">{{item.rating.average}}</text>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+	<view>
+		<!-- 豆瓣榜单 -->
+		<view>
+			<view class="nav">
+				<view class="nav_l">豆瓣榜单</view>
+				<navigator url="../lookMore/lookMore">
+					<view class="nav_img">
+						<text>查看更多</text>
+						<image src="../../images/arrow_right.png"></image>
+					</view>
+				</navigator>
+			</view>
+			<navigator class="lists" url="../dbList_detail/dbList_detail?txt=口碑电影&start=10" open-type="navigate">
+				<view class="list_l" style="width:224rpx;height:85rpx;">
+					<view class="l_week">
+						<view>WEEK</view>
+						<view>豆瓣周榜</view>
+					</view>
+					<view style="font-size:35rpx;color:#fff;margin-top:20rpx">口碑电影</view>
+				</view>
+				<view class="list_r">
+					<view class="r_back">
+						<image src="../../images/back1.jpg"></image>
+						<view class="r_sort">
+							<view>1.默片解说员
+								<text>8</text>
+							</view>
+							<view>2.数电影的人
+								<text>8</text>
+							</view>
+							<view>3.拍拖故事
+								<text>7.4</text>
+							</view>
+						</view>
+					</view>
+				</view>
+			</navigator>
+			<navigator class="lists" url="../dbList_detail/dbList_detail?txt=TOP250豆瓣电影" open-type="navigate" style="margin-top:30rpx;position:relative">
+				<view class="list_l" style="width:224rpx;height:85rpx;background-color: rgb(50, 50, 59)">
+					<view class="l_week" style="position:absolute;top:18rpx;left:0rpx;width:224rpx;height:84rpx">
+						<image src="../../images/top250.jpg" style="width:100%;height:200rpx"></image>
+					</view>
+				</view>
+				<view class="list_r">
+					<view class="r_back">
+						<image src="../../images/back2.jpg"></image>
+						<view class="r_sort" style="background-color: rgba(50, 50, 59,.6);">
+							<view>1.肖申克的救赎
+								<text>8</text>
+							</view>
+							<view>2.霸王别姬
+								<text>8</text>
+							</view>
+							<view>3.阿甘正传
+								<text>7.4</text>
+							</view>
+						</view>
+					</view>
+				</view>
+			</navigator>
+		</view>
+	</view>
+	<!-- 找电影 -->
+	<view>
+		<view>
+			<view class="nav">
+				<view class="nav_l">找电影</view>
+				<navigator url="../lookMore/lookMore">
+					<view class="nav_img">
+						<text>查看更多</text>
+						<image src="../../images/arrow_right.png"></image>
+					</view>
+				</navigator>
+			</view>
+			<view class="swiper_box" style="height:auto">
+				<view class="swiper" style="flex-wrap:wrap;height:auto;justify-content: space-between;">
+					<view class="model_swiper" style="width:220rpx;margin-right:10rpx;margin-top:20rpx" wx:for="{{find_lists}}" wx:key="index">
+						<navigator url="../detail/detail?id={{item.id}}">
+							<image src="{{item.images.small}}" style="width:200rpx;height:260rpx"></image>
+							<view>
+								<view class="title">{{item.title}}</view>
+								<view class="star_img">
+									<image src="../../images/star.svg"></image>
+									<image src="../../images/star.svg"></image>
+									<image src="../../images/star.svg"></image>
+									<image src="../../images/star1.svg"></image>
+									<image src="../../images/star2.svg"></image>
+									<text style="margin-left:20rpx;font-size:35rpx">{{item.rating.average}}</text>
+								</view>
+							</view>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view>
+		<view>
+			<view class="nav" style="margin-top:20rpx">
+				<view class="nav_l">豆瓣片单</view>
+				<navigator url="../lookMore/lookMore">
+					<view class="nav_img">
+						<text>查看更多</text>
+						<image src="../../images/arrow_right.png"></image>
+					</view>
+				</navigator>
+			</view>
+			<!-- 电影列表 豆瓣片单 -->
+			<view class="movies_list">
+
+				<view class="movies_f" wx:for="{{lists}}" wx:key="index">
+					<navigator url="../detail/detail?id={{item.id}}" style="width:100%;display:flex" open-type="navigate">
+						<view class="mf_l">
+							<image src="{{item.images.small}}"></image>
+						</view>
+						<view class="mf_r">
+							<view>{{item.title}}</view>
+							<view>影片时长：{{item.durations}}</view>
+							<view>
+								<text wx:for="{{item.casts}}" wx:key="index" style="margin-right:20rpx;font-size:25rpx;color:gray">{{item.name}}</text>
+							</view>
+							<view>{{item.pubdates}}</view>
+						</view>
+					</navigator>
+				</view>
+
+			</view>
+		</view>
+	</view>
+</view>

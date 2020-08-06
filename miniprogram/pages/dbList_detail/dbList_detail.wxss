@@ -1,0 +1,131 @@
+/* 顶部图片 */
+.r_back {
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+  margin-top: 30rpx;
+}
+
+.list_r .r_back .back_img {
+  height: 400rpx;
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.r_sort {
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 400rpx;
+  background: rgba(76, 41, 31, 0.6);
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.r_sort view text {
+  color: #ffac2d;
+  font-size: 25rpx;
+}
+
+.week_list {
+  text-align: center;
+  color: #fff;
+  font-size: 55rpx;
+  font-weight: 400;
+  line-height: 350rpx;
+}
+
+/* no.1…… */
+.looked_list {
+  padding: 30rpx 30rpx;
+}
+
+.NO {
+  margin-top: 30rpx;
+  width: 125rpx;
+  height: 50rpx;
+  text-align: center;
+  background: #FF6677;
+  color: #fff;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+
+.pro_no {
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: space-between;
+}
+
+.no_ll {
+  display: flex;
+  width: 80%;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+
+.ll_img image {
+  width: 200rpx;
+  height: 280rpx;
+  border-radius: 10rpx;
+}
+
+.ll_pp {
+  margin-left: 20rpx;
+}
+
+.pp_title {
+  font-size: 38rpx;
+  font-weight: 400;
+  padding-bottom: 10rpx;
+}
+
+.star_score {
+  padding-bottom: 10rpx;
+}
+
+.star_score image {
+  width: 25rpx;
+  height: 25rpx;
+  vertical-align: middle;
+}
+
+.star_score text {
+  margin-left: 10rpx;
+  color: #ccc;
+  font-size: 25rpx;
+  vertical-align: middle;
+}
+
+.kinds {
+  margin-bottom: 10rpx;
+  color: #ccc;
+  font-size: 25rpx;
+}
+
+.no_rr {
+  width: 20%;
+  text-align: center;
+  color: #ffac2d;
+  border-left: 1px dashed #e5e5e5;
+  line-height: 270rpx;
+}
+
+.no_content {
+  margin-top: 30rpx;
+  padding:20rpx 20rpx;
+  background:rgba(255, 255, 255, .8) ;
+}
+.no_content text{
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  color: #ccc;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

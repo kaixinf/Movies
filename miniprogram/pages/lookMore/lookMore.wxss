@@ -1,0 +1,42 @@
+.more{
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+}
+.wrap{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ margin: 0 auto
+}
+.box{
+  text-align: center;
+  width: 30%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  margin-bottom: 30rpx
+}
+.box>image{
+  width: 200rpx;
+  height: 300rpx;
+  border-radius: 10rpx
+
+}
+.titles{
+  color: #222;
+  font-size: 28rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dis_score image{
+  vertical-align: middle;
+  width: 28rpx;
+  height: 28rpx;
+}
+.dis_score text{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  color: #999;
+  margin-bottom: 30rpx
+}

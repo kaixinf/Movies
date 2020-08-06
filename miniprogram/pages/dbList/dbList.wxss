@@ -1,0 +1,180 @@
+.db_list {
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.nav1 {
+  padding: 30rpx 30rpx;
+  width: 100%;
+  background: #42231f;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+
+.list_top {
+  font-size: 50rpx;
+  color: #f8d6b2;
+  margin-bottom: 35rpx;
+}
+
+.list_boo {
+  display: flex;
+}
+
+.img {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 68%;
+}
+
+.three_img {
+  width: 120rpx;
+  height: 220rpx;
+}
+
+.three_img image {
+  width: 170rpx;
+  height: 220rpx;
+  border-radius: 10rpx;
+}
+
+.number {
+  color: #af9d92;
+  font-size: 51rpx;
+  margin-top: 50rpx;
+  font-weight: 400;
+}
+
+/* 一周口碑电影 */
+
+.r_back {
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+  margin-top: 30rpx;
+}
+
+.list_r .r_back .back_img {
+  height: 400rpx;
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.r_sort {
+  border-radius: 10rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 400rpx;
+  background: rgba(76, 41, 31, 0.6);
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.r_sort view text {
+  color: #ffac2d;
+  font-size: 25rpx;
+}
+
+/* 一周口碑电影榜 */
+
+.week_list {
+  color: #fff;
+  font-size: 50rpx;
+  font-weight: 700;
+  margin-bottom: 45rpx;
+}
+
+.topmovies {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.tm_l {
+  text-align: center;
+  width: 250rpx;
+  height: 230rpx;
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+.tm_l view {
+  width: 250rpx;
+  height: 230rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10rpx;
+}
+
+.tm_l image {
+  border-radius: 10rpx;
+  width: 250rpx;
+  height: 230rpx;
+}
+
+.tm_l image:nth-of-type(2) {
+  width: 210rpx;
+  height: 230rpx;
+  position: absolute;
+  top: 0;
+  left: 15rpx;
+}
+
+.tm_r {
+  margin-top: 15rpx;
+  width: 65%;
+  height: 200rpx;
+  border: 1px solid #e5e5e5;
+  border-left: none;
+}
+
+.tm_r view {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+
+.tm_r view text {
+  font-size: 25rpx;
+  color: #ffac2d;
+  margin-left: 10rpx;
+}
+
+
+
+.tt_b {
+  width: 260rpx;
+  height: 230rpx;
+  box-sizing: border-box;
+  padding-top: 75rpx;
+  background-color: rgb(76, 41, 31);
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.l_week {
+  color: hsla(0, 0%, 100%, .6);
+  position: relative;
+}
+
+.l_week view:nth-of-type(1) {
+  display: inline-block;
+  opacity: .1;
+  font-size: 70rpx;
+  position: absolute;
+  padding-right: 10rpx;
+  top: -33rpx;
+  bottom: 0;
+  left: 8rpx;
+  right: 0;
+}
+
+.l_week view:nth-of-type(2) {
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 25rpx
+}

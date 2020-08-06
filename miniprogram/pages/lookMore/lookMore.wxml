@@ -1,0 +1,16 @@
+<view class="more">
+  <view class="wrap">
+      <navigator class="box" wx:for="{{mores}}" wx:key="index" url="../detail/detail?id={{item.id}}">
+        <image src="{{item.images.small}}"></image>
+        <view class="titles">{{item.title}}</view>
+        <view class="dis_score">
+          <image src="../../images/star.svg"></image>
+          <image src="../../images/star.svg"></image>
+          <image src="../../images/star.svg"></image>
+          <image src="../../images/star.svg"></image>
+          <image src="../../images/star2.svg"></image>
+          <text>{{item.rating.average}}</text>
+        </view>
+      </navigator>
+  </view>
+</view>

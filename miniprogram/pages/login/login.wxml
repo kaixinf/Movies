@@ -1,0 +1,79 @@
+<view class="login_btn">
+	<view class="userinfo btn" wx:if="{{!hasUserInfo && canIUse}}">
+		<button hover-class="btn-hover" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+			登陆 </button>
+	</view>
+	<view wx:else class="show">
+		<view>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+		</view>
+		<view>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</view>
+	</view>
+</view>
+
+<view class="details">
+	<view class="mine_d">
+		<view style="font-size:46rpx;font-weight:700">我的书影音</view>
+		<view style="font-size:30rpx;color: #5CC76D;line-height:55rpx">登陆查看<image src="../../images/arrow_right.png"></image>
+		</view>
+	</view>
+	<view class="looking">
+		<view class="left">
+			<image src="../../images/Analysis1.png"></image>
+		</view>
+		<view class="right">
+			<view class="box">
+				<view class="r_ll">
+					<view>观影分析</view>
+					<view><text>0</text>看过</view>
+				</view>
+				<view class="r_rr">
+					<view class="r_cc">标记10部影片开启观影分析</view>
+					<view class="r_dd"><text>立即开启</text>
+						<image src="../../images/arrow_right.png"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="looking">
+		<view class="left">
+			<image src="../../images/books.png"></image>
+		</view>
+		<view class="right">
+			<view class="box">
+				<view class="r_ll">
+					<view>读书分析</view>
+					<view><text>0</text>看过</view>
+				</view>
+				<view class="r_rr">
+					<view class="r_cc">标记10本书籍开启读书分析</view>
+					<view class="r_dd"><text>立即开启</text>
+						<image src="../../images/arrow_right.png"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="looking">
+		<view class="left">
+			<image src="../../images/music.png"></image>
+		</view>
+		<view class="right">
+			<view class="box">
+				<view class="r_ll">
+					<view>音乐分析</view>
+					<view><text>0</text>看过</view>
+				</view>
+				<view class="r_rr">
+					<view class="r_cc">标记10张唱片开启音乐分析</view>
+					<view class="r_dd"><text>立即开启</text>
+						<image src="../../images/arrow_right.png"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

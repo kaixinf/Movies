@@ -1,0 +1,82 @@
+<!-- 头部 -->
+<view class="header">
+	<view class="logo">
+		<image src="../../images/logo.png"></image>
+	</view>
+	<view class="search">
+		<image src="../../images/search.png"></image>
+		<input placeholder="搜索"></input>
+	</view>
+	<view class="PC">
+		<image src="../../images/PC.png"></image>
+	</view>
+</view>
+<!-- 渲染详情页得数据 -->
+<!-- 内容区 -->
+<view class="cont" wx:for="{{hots}}" wx:key="index">
+	<image src="{{item.images.small}}" class="back_fix"></image>
+	<view class="top">
+		<view class="t_l">
+			<image src="{{item.images.small}}"></image>
+		</view>
+		<view class="t_r">
+			<view>{{item.title}}</view>
+			<view>{{item.original_title}}</view>
+			<view>
+				<text>{{item.countries[0]}}/</text>
+				<text wx:for="{{item.genres}}" wx:key="index">{{item}}/</text>
+				<text>{{item.pubdates[0]}}上映/</text>
+				<text>片长{{item.durations[0]}}</text>
+			</view>
+			<view class="looks">
+				<view>
+					<image src="https://img3.doubanio.com/f/talion/cf2ab22e9cbc28a2c43de53e39fce7fbc93131d1/pics/card/ic_mark_todo_s.png"></image>想看
+				</view>
+				<view>
+					<image src="https://img3.doubanio.com/f/talion/78fc5f5f93ba22451fd7ab36836006cb9cc476ea/pics/card/ic_mark_done_s.png"></image>看过
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="bot1">
+		<view class="bot1_t">
+			<image src="../../images/logo.png"></image>
+			<text style="font-size:28rpx;color:#fff">实时口碑</text>
+		</view>
+		<view class="bot1_c">
+			<text>{{item.collect_count}}</text>
+			<text>人喜欢</text>
+		</view>
+	</view>
+	<view class="production" style="margin-top:30rpx">
+		<view style="color:#999;font-size:28rpx">简介</view>
+		<view class="userfulcon"><text>{{item.summary}}</text>
+		</view>
+	</view>
+	<view class="disscuss">
+	
+	</view>
+</view>
+<view  wx:for="{{hots}}" wx:key="index" style="padding:30rpx 30rpx;box-sizing:border-box">
+   <!-- 评论内容区 -->
+   	<view class="dis_t">
+			<view>短评</view>
+			<view style="font-size:28rpx">
+				<image src="https://img3.doubanio.com/f/talion/91f6dc7f952282d95b905d0cde0b71b579cc81b8/pics/card/ic_compose_s.png"></image>打开App写短评
+			</view>
+		</view>
+		<view class="dis_con" wx:for="{{item.popular_comments}}" wx:key="index">
+			<view class="con_top">
+				<image src="{{item.author.avatar}}"></image>
+				<text>{{item.author.name}}</text>
+				<text style="color:#666;font-size:23rpx">{{item.created_at}}</text>
+			</view>
+      <view style="margin-top:30rpx;font-size:28rpx;line-height:40rpx">{{item.content}}</view>
+      <view class="good">
+        <view><image src="https://img3.doubanio.com/f/talion/7a0756b3b6e67b59ea88653bc0cfa14f61ff219d/pics/card/ic_like_gray.svg"></image><text style="color:#666;font-size:25rpx;">{{item.useful_count}}</text></view>
+        <view>
+          <image src="https://img3.doubanio.com/f/talion/be268c0a1adb577c8dfdcfbe48c818af3983ed62/pics/card/more.svg"></image>
+        </view>
+      </view>
+		</view>
+</view>

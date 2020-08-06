@@ -1,0 +1,113 @@
+<view class="db_list">
+	<navigator url="../dbList_detail/dbList_detail?txt=2019年度电影榜单&start=30" open-type="navigate" class="nav1">
+		<view class="list_top">2019年度电影榜单</view>
+		<view class="list_boo">
+			<view class="img">
+				<view class="three_img">
+					<image src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.webp"></image>
+				</view>
+				<view class="three_img">
+					<image src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2561716440.webp"></image>
+				</view>
+				<view class="three_img">
+					<image src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2372307693.webp"></image>
+				</view>
+			</view>
+			<view class="number">+218</view>
+		</view>
+	</navigator>
+	<navigator url="../dbList_detail/dbList_detail?txt=一周口碑电影榜&start=50" open-type="navigate">
+		<view class="list_r">
+			<view class="r_back">
+				<image src="../../images/back1.jpg" class="back_img"></image>
+				<view class="r_sort">
+					<view class="week_movie">
+						<view class="week_list">一周口碑电影榜</view>
+						<view class="list_boo">
+							<view class="img">
+								<view class="three_img">
+									<image src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2194138787.webp"></image>
+								</view>
+								<view class="three_img">
+									<image src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2277799019.webp"></image>
+								</view>
+								<view class="three_img">
+									<image src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p909265336.webp"></image>
+								</view>
+							</view>
+							<view class="number">+250</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="../dbList_detail/dbList_detail?txt=TOP250豆瓣电影&start=40" open-type="navigate">
+		<view class="topmovies">
+			<view class="tm_l">
+				<image src="../../images/back2.jpg"></image>
+				<view style="background: rgba(50, 50, 59,.8);"></view>
+				<image src="../../images/top250.jpg"></image>
+			</view>
+			<view class="tm_r">
+				<view>1.肖申克的救赎
+					<text>9.7分</text>
+				</view>
+				<view>2.霸王别姬
+					<text>9.6分</text>
+				</view>
+				<view>3.阿甘正传
+					<text>9.5分</text>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="../dbList_detail/dbList_detail?txt=2019口碑电影&start=60" open-type="navigate">
+		<view class="topmovies">
+			<view class="tt_b">
+				<view class="list_l" style="width:100%;height:84rpx;">
+					<view class="l_week">
+						<view>2019</view>
+						<view>2019</view>
+					</view>
+					<view style="font-size:40rpx;color:#fff;margin-top:20rpx;font-weight:700">口碑电影</view>
+				</view>
+			</view>
+			<view class="tm_r">
+				<view>1.这个杀手不太冷
+					<text>9.7分</text>
+				</view>
+				<view>2.美丽人生
+					<text>9.6分</text>
+				</view>
+				<view>3.泰坦尼克号
+					<text>9.5分</text>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="../dbList_detail/dbList_detail?txt=2019外语电影&start=70" open-type="navigate">
+    <view class="topmovies">
+		<view class="tt_b" style="background:#36444C">
+			<view class="list_l" style="width:100%;height:84rpx;">
+				<view class="l_week">
+					<view>2019</view>
+					<view>2019</view>
+				</view>
+				<view style="font-size:40rpx;color:#fff;margin-top:20rpx;font-weight:700">外语电影</view>
+			</view>
+		</view>
+		<view class="tm_r">
+			<view>1.千与千寻
+				<text>9.7分</text>
+			</view>
+			<view>2.辛德勒的名单
+				<text>9.6分</text>
+			</view>
+			<view>3.盗梦空间
+				<text>9.5分</text>
+			</view>
+		</view>
+	</view>
+  </navigator>
+</view>

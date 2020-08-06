@@ -1,0 +1,283 @@
+/* 头部 */
+.header {
+  background: #fff;
+  display: flex;
+  padding: 3%;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 20%;
+
+}
+
+.logo image {
+  width: 130rpx;
+  height: 60rpx;
+}
+
+.search {
+  width: 65%;
+  position: relative;
+
+}
+
+.search image {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 17rpx;
+  left: 22rpx;
+
+}
+.search input {
+  padding: 8rpx 70rpx;
+  font-size: 30rpx;
+  border: 2rpx solid #dfdfdf;
+  border-radius: 50rpx;
+}
+
+.PC {
+  width: 5%;
+}
+
+.PC image {
+  vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+}
+/* 内容区 */
+.cont{
+  overflow: hidden;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.back_fix{
+  width: 100%;
+  height: 860rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size:100% 100%;
+  z-index: -1;
+  filter: blur(200px);
+  transform: scale(1.2);
+}
+.top{
+  display: flex;
+  
+
+}
+.t_l{
+  width: 200rpx;
+  height: 300rpx;
+}
+.t_l image{
+  border-radius: 10rpx;
+  width: 200rpx;
+  height: 300rpx;
+}
+.t_r{
+  margin-left: 20rpx;
+  width: 460rpx;
+}
+.t_r view{
+  line-height: 60rpx;
+  
+}
+.t_r view:nth-of-type(1){
+  color: #ffffff;
+  font-size: 45rpx;
+}
+.t_r view:nth-of-type(2){
+  color: #fff;
+  font-size: 30rpx;
+}
+.t_r view:nth-of-type(3){
+  color: #ccc;
+  font-size: 25rpx;
+  line-height: 34rpx;
+
+}
+.t_r .looks{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.t_r .looks view{
+  color: #222;
+  padding:0 60rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+.t_r .looks view:nth-of-type(2){
+  margin-left: 20rpx;
+}
+.looks image{
+  margin-right: 10rpx;
+  width: 25rpx;
+  height:25rpx;
+}
+.bot1{
+  margin-top: 20rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  background-color: rgba(0,0,0,0.1);
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+}
+.b1_t{
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+.b1_t view:nth-of-type(1){
+  font-size: 25rpx;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.b1_t view:nth-of-type(2){
+  padding: 10rpx 10rpx;
+  font-size: 30rpx;
+  border: 1px solid #fff;
+  border-radius: 10rpx;
+}
+.score{
+  font-size: 70rpx;
+  margin-right: 20rpx;
+  color: #fff;
+}
+.b1_l{
+  width: 50%;
+  display: flex;
+}
+.l_r view image{
+  width: 28rpx;
+  height: 28rpx;
+}
+.people{
+  color: #999;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.b1_r{
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+}
+.r_star{
+  display: flex;
+  justify-content:flex-end;
+  width: 30%;
+  text-align: right;
+}
+.r_star image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.progress{
+  margin-top: 7rpx;
+  margin-left: 5%;
+  width: 65%;
+  height: 7rpx;
+  background: rgba(255,255,255,0.2);
+}
+.show_color{
+  width: 30%;
+  height: 7rpx;
+  background: #FFAC2C;
+  position: absolute;
+  top: 7rpx;
+  left: 111rpx;
+}
+.foo{
+  color: #fff;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0,0,0,0.1);
+  padding: 30rpx 20rpx;
+  border-radius: 10rpx;
+}
+.foo_l image{
+  width: 40rpx;
+  height:40rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+
+}
+.foo_l+view{
+  color: #ccc;
+  font-size: 25rpx;
+}
+/* banner图 */
+.section{
+  padding: 30rpx 30rpx;
+  box-sizing: border-box;
+}
+.bann_img{
+  width: 100%;
+}
+.bann_img image{
+  width: 100%;
+  height: 190rpx;
+}
+.production{
+  margin-top: 20rpx;
+}
+.conn{
+  font-size:25rpx;
+  color:#333;
+  line-height:48rpx;
+  text-indent:1rem;
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+/*评论 */
+.dis_t{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.dis_t image{
+  margin-right: 10rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
+/* 评论内容区 */
+.con_top{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+}
+.con_top image{
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 15rpx;
+  vertical-align: middle;
+}
+.con_top text{
+  margin-right: 10rpx;
+}
+.good{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #e5e5e5
+}
+.good image{
+  vertical-align: middle;
+  width: 40rpx;
+  height: 40rpx;
+}
